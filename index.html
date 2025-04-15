@@ -10,13 +10,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic+Expanded+One&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
     <title>Tomas Silva</title>
+    <link rel="icon" href="img/thomasPNG.png" type="image/png" id="iconTab">
+
 </head>
 
 <body>
     <header>
         <div id="navHdr">
-            <!-- <img src="img/blankPFP.webp" alt="" id="logoHeader"> -->
+            <img src="img/thomasPNG.png" alt="" id="logoHeader">
             <nav id="nav">
 
                 <ul>
@@ -61,8 +68,8 @@
         <h2 id="h2Intro"><span>&lt;Position&gt;</span> Web Developer <span>&lt;/Position&gt;</span></h2>
         <img src="" alt="" id="imgMeIntro">
         <div id="btnIntro">
-            <button id="btnIntroP">Mes Projets</button>
-            <button id="btnIntroCntct">Contact Moi</button>
+            <a href="#secProject" id="btnIntroP">Mes Projets</a>
+            <a href="#secCntctMe" id="btnIntroCntct">Contact Moi</a>
         </div>
     </section>
 
@@ -74,120 +81,150 @@
 
     <!-- My Skills -->
     <section id="secMySkills">
-        <div id="divLang">
-            <div>
-                <img src="" alt="HTML" class="imgMySkills">
-                <h4>HTML</h4>
-            </div>
-            <div>
-                <img src="" alt="CSS" class="imgMySkills">
-                <h4>CSS</h4>
-            </div>
-            <div>
-                <img src="" alt="C#" class="imgMySkills">
-                <h4>C#</h4>
-            </div>
-            <div>
-                <img src="" alt="C++" class="imgMySkills">
-                <h4>C++</h4>
-            </div>
+        <h2 class="h2MySkills">My Skills</h2>
+
+        <div id="divMySkills">
+            <ul class="ulSkills">
+                <li class="liSkills">
+                    <img src="img/logos/html.svg" alt="HTML" class="imgMySkills">
+                    <h4 class="h4Skills">HTML</h4>
+                </li>
+                <li class="liSkills">
+                    <img src="img/logos/css.svg" alt="CSS" class="imgMySkills">
+                    <h4 class="h4Skills">CSS</h4>
+                </li>
+                <li class="liSkills">
+                    <img src="img/logos/c (1).svg" alt="C#" class="imgMySkills">
+                    <h4 class="h4Skills">C#</h4>
+                </li>
+                <li class="liSkills">
+                    <img src="img/logos/cLogoPreto.svg" alt="C++" class="imgMySkills">
+                    <h4 class="h4Skills">C++</h4>
+                </li>
+                <li class="liSkills">
+                    <img src="img/logos/notion.svg" alt="Notion" class="imgMySkills">
+                    <h4 class="h4Skills">Notion</h4>
+                </li>
+                <li class="liSkills">
+                    <img src="img/logos/github.svg" alt="Github" class="imgMySkills">
+                    <h4 class="h4Skills">Github</h4>
+                </li>
+                <li class="liSkills">
+                    <img src="img/logos/slack-logo-black.svg" alt="Slack" class="imgMySkills">
+                    <h4 class="h4Skills">Slack</h4>
+                </li>
+            </ul>
         </div>
-        <div id="divTech">
-            <div>
-                <img src="" alt="Notion" class="imgMySkills">
-                <h4>Notion</h4>
-            </div>
-            <div>
-                <img src="" alt="Github" class="imgMySkills">
-                <h4>Github</h4>
-            </div>
-            <div>
-                <img src="" alt="Slack" class="imgMySkills">
-                <h4>Slack</h4>
-            </div>
-        </div>
+
     </section>
 
     <!-- Mes Parcours -->
     <section id="secMParc">
-        <h2>Mes Parcours</h2>
-        <div>
-            <div>
-                <h3>Parcours Professionnel</h3>
-                <div>
-                    <img src="" alt="Enterprise">
-                    <div id="divPPro">
-                        <h4>Stagiaire Technicien Informatique</h4>
-                        <p>TRI Rhône-Alpes Pont-Évêque (38)</p>
-                        <p>Avril 2024</p>
-                        <p>Reparation des ordinateurs de l’Université Granoble Alpes</p>
+        <h2 id="h2PP">Mes Parcours</h2>
+        <div id="cardPPro">
+            <div id="divMParc">
+                <h3 class="h3PP">Parcours Professionnel</h3>
+                <div class="divMParcPro">
+                    <div class="divInfoPP">
+                        <div id="divPPro">
+                            <h4>Stagiaire Technicien Informatique</h4>
+                            <div class="divInfoFix">
+                                <img src="img/ParcoursPro/triRa.png" alt="Enterprise" class="imgInfoPP">
+                                <div>
+                                    <p class="pInfo">TRI Rhône-Alpes Pont-Évêque (38)</p>
+                                    <p class="pInfo">Avril 2024</p>
+                                    <p class="pInfo">Reparation des ordinateurs de l’Université Granoble Alpes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divInfoPP">
+                        <div id="divPPro">
+                            <h4>Stagiaire Programmeur</h4>
+                            <div class="divInfoFix">
+                                <img src="img/ParcoursPro/innovationMakers.png" alt="Enterprise" class="imgInfoPP">
+                                <div>
+                                    <p class="pInfo">Innovation Makers - Portugal</p>
+                                    <p class="pInfo">2020 (3 mois)</p>
+                                    <p class="pInfo">Développement d’une application pour la gestion des
+                                        étudiants</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divInfoPP">
+                        <div id="divPPro">
+                            <h4>Stagiaire Programmeur</h4>
+                            <div class="divInfoFix">
+                                <img src="img/ParcoursPro/innovationMakers.png" alt="Enterprise" class="imgInfoPP">
+                                <div>
+                                    <p class="pInfo">Innovation Makers - Portugal</p>
+                                    <p class="pInfo">2019 (3 mois)</p>
+                                    <p class="pInfo">Développement d’une application pour le contrôle d’un DAB</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <img src="" alt="Enterprise">
-                    <div id="divPPro">
-                        <h4>Stagiaire Programmeur</h4>
-                        <p>Innovation Makers - Portugal</p>
-                        <p>2020 (3 mois)</p>
-                        <p>Développement d’une application pour la gestion des
-                            étudiants</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="Enterprise">
-                    <div id="divPPro">
-                        <h4>Stagiaire Programmeur</h4>
-                        <p>Innovation Makers - Portugal</p>
-                        <p>2019 (3 mois)</p>
-                        <p>Développement d’une application pour le contrôle d’un
-                            DAB</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3>Parcours Etudes</h3>
-
-                <div>
-                    <img src="" alt="Ecole">
-                    <div id="divPEtudes">
-                        <h4>Emlyon Business School</h4>
-                        <p>Latoile - Lyon (69)</p>
-                        <p>
-                            2025 (4 mois)
-                        </p>
-                        <p>Développement web, Gestion de projet et Cours carrières</p>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="" alt="Ecole">
-                    <div id="divPEtudes">
-                        <h4>Verneil Formation</h4>
-                        <p>Estressin, Vienne (38)</p>
-                        <p>2023 - 24 (6 Mois)</p>
-                        <p>Apprendre à utiliser tous les moyens possibles pour entrer
-                            dans le monde du travail
-                            Remise a niveau relative ou Diplome CLEA</p>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="" alt="Ecole">
-                    <div id="divPEtudes">
-                        <h4>Formation en Langue Française</h4>
-                        <p>Alynea - Givors</p>
-                        <p>2022 - 23 (4 mois)</p>
-                        <p>Niveau B1</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="Ecole">
-                    <div id="divPEtudes">
-                        <h4>Baccalauréat Pro</h4>
-                        <p>Ecole Raul Proença - Caldas da Rainha, Portugal</p>
-                        <p>2017 - 20</p>
-                        <p>Technicien en Gestion et Programmation des
-                            Systémes Informatiques</p>
+                    <h3 class="h3PP">Parcours Etudes</h3>
+                    <div class="divMParcPro">
+                        <div class="divInfoPP">
+                            <div id="divPPro">
+                                <h4>Certificat Conception et Développement Web (en cours)</h4>
+                                <div class="divInfoFix">
+                                    <img src="img/ParcoursPro/latoile.png" alt="Enterprise" class="imgInfoPP">
+                                    <div>
+                                        <p class="pInfo">Emlyon Buisiness School</p>
+                                        <p class="pInfo">2025 (4 mois)</p>
+                                        <p class="pInfo">Développement web, Gestion de projet et Cours carrières </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divInfoPP">
+                            <div id="divPPro">
+                                <h4>Verneil Formation</h4>
+                                <div class="divInfoFix">
+                                    <img src="img/ParcoursPro/vFormation.jpg" alt="Enterprise" class="imgInfoPP">
+                                    <div>
+                                        <p class="pInfo">Estressin, Vienne (38)</p>
+                                        <p class="pInfo">2023 - 24 (6 Mois)</p>
+                                        <p class="pInfo">Apprendre à utiliser tous les moyens possibles pour entrerdans
+                                            le monde du travail
+                                            <br>Remise a niveau relative ou Diplome CLEA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divInfoPP">
+                            <div id="divPPro">
+                                <h4>Formation en Langue Française</h4>
+                                <div class="divInfoFix">
+                                    <img src="img/ParcoursPro/alynea.jpg" alt="Enterprise" class="imgInfoPP">
+                                    <div>
+                                        <p class="pInfo">Alynea - Givors</p>
+                                        <p class="pInfo">2022 - 23 (4 mois)</p>
+                                        <p class="pInfo">B1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divInfoPP">
+                            <div id="divPPro">
+                                <h4>Bac Pro</h4>
+                                <div class="divInfoFix">
+                                    <img src="img/ParcoursPro/téléchargement.png" alt="Enterprise" class="imgInfoPP">
+                                    <div>
+                                        <p class="pInfo">Ecole Raul Proença - Caldas da Rainha, Portugal</p>
+                                        <p class="pInfo">2017 - 20</p>
+                                        <p class="pInfo">Technicien en Gestion et Programmation des Systémes
+                                            Informatiques</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,55 +234,70 @@
     <!-- Mes Projets -->
     <section id="secProject">
         <h2>Mes Projets</h2>
-        <div>
+        <div id="allCards">
             <div class="cardPrjt">
-                <img src="" alt="">
-                <h3>LUEUR & PARFUM</h3>
-                <p>Site pour la vend de bougies</p>
-                <button><a href="https://tomasasilva.github.io/randuHTMLCSS/">Voir ici</a></button>
+                <img src="img/Projets/velas.png" alt="" class="imgProjet">
+                <div class="divProjet">
+                    <h3 class="nomSite">LUEUR & PARFUM</h3>
+                    <p class="pProjet">Site pour la vend de bougies</p>
+                    <a class="btnProjet" href="https://tomasasilva.github.io/randuHTMLCSS/">Voir
+                        ici</a>
+                </div>
             </div>
-        </div>
-        <div>
+
             <div class="cardPrjt">
-                <img src="" alt="">
-                <h3>Cristiano Ronaldo</h3>
-                <p>Site de la bio de Cristiano Ronaldo</p>
-                <button><a href="https://tomasasilva.github.io/RanduHTML/">Voir ici</a></button>
+                <img src="img/Projets/cristianoRonaldo.png" alt="" class="imgProjet">
+                <div class="divProjet">
+                    <h3 class="nomSite">Cristiano Ronaldo</h3>
+                    <p class="pProjet">Site de la bio de Cristiano Ronaldo</p>
+                    <a class="btnProjet" href="https://tomasasilva.github.io/RanduHTML/" target="_blank">Voir ici</a>
+                </div>
             </div>
-        </div>
-        <div>
+
             <div class="cardPrjt">
-                <img src="" alt="">
-                <h3>Personal Portfolio</h3>
-                <p>Site de Mon Portfolio Personal</p>
-                <button><a href="">Voir ici</a></button>
+                <img src="img/Projets/portfolio.png" alt="" class="imgProjet">
+                <div class="divProjet">
+                    <h3 class="nomSite">Personal Portfolio</h3>
+                    <p class="pProjet">Site de Mon Portfolio Personal</p>
+                    <a class="btnProjet" href="https://tomasasilva.github.io/RanduHTML/" target="_blank">Voir ici</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Me -->
     <section id="secCntctMe">
-        <h2>Contact Moi</h2>
-        <form action="">
-            <div>
-                <label for="Prenom">Prenom</label>
-                <input type="text" required>
-                <label for="Nom">Nom</label>
-                <input type="text" required>
-                <label for="Mail">Mail</label>
-                <input type="text">
-                <label for="Enterprise">Enterprise (Optional)</label>
-                <input type="text" required>
+        <h2 id="h2Cntc">Contact Moi</h2>
+        <form action="" class="formContact">
+            <div class="dCttAll">
+                <div class="divComment">
+                    <label for="Prenom" class="lblComment">Prenom</label>
+                    <input type="text" required>
+                </div>
+                <div class="divComment">
+                    <label for="Nom" class="lblComment">Nom</label>
+                    <input type="text" required>
+                </div>
+                <div class="divComment">
+                    <label for="Mail" class="lblComment">Mail</label>
+                    <input type="text">
+                </div>
+                <div class="divComment">
+                    <label for="Enterprise" class="lblComment">Enterprise (Optional)</label>
+                    <input type="text">
+                </div>
             </div>
-            <div>
+            <div class="divComment">
                 <label for="Message">Message</label>
-                <input type="text">
+                <input type="text" class="inputMsg">
             </div>
+            <button class="btnSub">Envoyer</button>
         </form>
     </section>
 
     <!-- Arrow to go to top -->
-    <a href="#nav"> <img id="arrow" src="img/arrowUP.png"></a>
-</body>
+    <a href="#navHdr"> <img id="arrow" src="img/arrowUP.png"></a>
 
+    <!-- footer -->
+</body>
 </html>

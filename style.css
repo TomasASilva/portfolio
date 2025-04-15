@@ -3,8 +3,10 @@
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
-
 
 h2 {
     text-align: center;
@@ -12,10 +14,23 @@ h2 {
     margin-bottom: 25px;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 20px;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 /* header */
+#logoHeader {
+    text-align: center;
+    width: 60px;
+    height: 100%;
+
+    margin-left: 80px;
+}
 
 header {
     background-color: #0a100d;
@@ -26,11 +41,9 @@ header {
 
 nav {
     margin-left: auto;
-    padding-right: 20px;
-    text-align: right;
     width: 95%;
-    display: inline-block;
     align-content: space-evenly;
+    margin-right: 65px;
 }
 
 #navHdr {
@@ -47,7 +60,7 @@ nav {
     margin-left: 20px;
     text-decoration: none;
     color: #d6d5c9;
-    width: 100px;
+    width: 120px;
 }
 
 nav,
@@ -55,7 +68,7 @@ li {
     display: flex;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 ul {
@@ -68,7 +81,6 @@ ul.lsit {
 }
 
 /* Change Language */
-
 .imgChangeLang {
     height: 20px;
     width: 30px;
@@ -93,6 +105,7 @@ ul.lsit {
 
 .dropdown:hover #dropdown-content {
     display: block;
+
 }
 
 #dropdown-content a:hover {
@@ -111,14 +124,13 @@ ul.lsit {
     background-color: #f9f9f9;
     min-width: 5px;
     margin: 1px;
-    width: 30px;
+    width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
 }
 
 /* Me */
-
 h1 {
     text-align: center;
     justify-content: center;
@@ -130,7 +142,7 @@ h1 {
     text-transform: uppercase;
 }
 
-#h2Intro{
+#h2Intro {
     margin-left: 80px;
     margin-bottom: 50px;
 }
@@ -144,7 +156,6 @@ span {
     text-transform: lowercase;
 }
 
-
 #btnIntro {
     text-align: center;
     display: flex;
@@ -154,8 +165,6 @@ span {
     margin-right: 24px;
     margin-bottom: 40px;
 }
-
-
 
 #btnIntroP {
     background: #a22c29;
@@ -172,6 +181,28 @@ span {
     padding-left: 10px;
     padding-right: 10px;
     border: none;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    align-content: center;
+}
+
+#btnIntroP:hover {
+    background: #d6d5c9;
+    border-style: solid;
+    border-color: #a22c29;
+    color: #a22c29;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 50px;
     width: 250px;
 }
@@ -193,21 +224,349 @@ span {
     border: none;
     height: 50px;
     width: 250px;
+    text-align: center;
+    align-content: center;
+}
+
+#btnIntroCntct:hover {
+    background: #0a100d;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 250px;
 }
 
 /* About Me */
-#secAboutMe{
+#secAboutMe {
     background-color: #902923;
     color: white;
     padding: 20px;
-   
+    padding-top: 0px;
+
 }
 
-
-#pAboutMe{
+#pAboutMe {
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
 }
 
 /* My Skills */
+
+.h2MySkills {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0%;
+}
+
+.imgMySkills {
+    height: 40px;
+    width: 40px;
+    fill: white;
+}
+
+.liSkills:hover {
+    img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.h4Skills {
+    opacity: 0%;
+}
+
+.liSkills {
+    display: block;
+    text-align: center;
+}
+
+.liSkills:hover .h4Skills {
+    opacity: 100%;
+
+}
+
+#divMySkills {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ulSkills {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* My Parcours */
+#secMParc {
+    background-image: url(/img/output-onlinepngtools.png) ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#divMParc {
+    display: block;
+    text-align: center;
+}
+
+.divH3PP {
+    display: block;
+    text-align: center;
+}
+
+.divMParcPro {
+    display: block;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+#h2PP {
+    color: black;
+    margin-top: 0%;
+
+}
+
+.pInfo {
+    margin-left: 30px;
+}
+
+#cardPPro {
+    width: 75%;
+    background-color: white;
+    box-shadow: 0px 15px 15px 0.25px black;
+    padding: 5% 5%;
+    border-radius: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.divInfoPP {
+    display: inline-flex;
+    margin-top: 5px;
+
+}
+.h3PP{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size:larger;
+    color: #0a100d;
+}
+
+.imgInfoPP {
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    align-self: center;
+}
+
+
+.divInfoFix{
+    display: inline-flex;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+/* My Projects */
+.cardPrjt{
+    width: 358px;
+    border-top: 15px;
+    height: auto;
+    aspect-ratio: auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.divProjet{
+    padding: 40px;
+}
+
+#allCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+}
+
+.nomSite {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    color: #a22c29;
+    margin-bottom: 20px;
+}
+
+.pProjet {
+    text-align: start;
+    margin: 0%;
+    margin-bottom: 20px;
+}
+
+.btnProjet {
+    background: #a22c29;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    align-content: center;
+}
+
+.btnProjet:hover {
+    background: white;
+    border-style: solid;
+    border-color: #a22c29;
+    color: #a22c29;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 250px;
+}
+
+.imgProjet{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Leave a Comment */
+#secCntctMe{
+    place-items: center;
+    background-image: url(/img/output-onlinepngtools.png) ;
+    color: rgba(0, 0, 0, 1);
+    padding: 20px;
+    padding-top: 20px
+}
+
+#h2Cntc{
+    margin-top: 0;
+}
+
+.btnSub {
+    color: white;
+    background-color: #a22c29;
+    height: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 8px;
+    font-size: smaller;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.formContact {
+    width: auto;
+    border-top: 15px;
+    height: auto;
+    aspect-ratio: auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.dCttAll{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.lblComment{
+text-align: left;
+}
+
+.divComment{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 5px 0;
+    display: block;
+    width: 250px;
+}
+
+.inputMsg {
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+/* Go up */
+#arrow {
+    float: right;
+    padding: 2px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    border: none;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    opacity: 50%;
+}
+
+#arrow:hover {
+    opacity: 100%;
+}
