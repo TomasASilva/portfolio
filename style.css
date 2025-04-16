@@ -18,32 +18,45 @@ h2 {
     margin-top: 20px;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
 /* Aside Social Media */
-.imgSocialMedia{
+.imgSocialMedia {
     width: 40px;
     height: 40px;
 }
 
-#aSideSocialMedia{
+
+.imgSocialMedia:hover {
+
+    height: 80px;
+    width: 80px;
+
+    #aSideSocialMedia{
+        width: 85px;
+    }
+
+}
+
+#aSideSocialMedia {
     display: flex;
     flex-flow: column;
     gap: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    width: 50px;
+    width: auto;
     text-align: center;
     padding: 5px;
     border-radius: 15px;
     position: fixed;
-
+    background-color: white;
+    margin-left: 2px;
 }
 
 /* header */
-#logoHeader {
+.logoHeader {
     text-align: center;
     width: 60px;
     height: 100%;
@@ -65,7 +78,7 @@ nav {
     margin-right: 65px;
 }
 
-#navHdr {
+.navHdr {
     display: flex;
     align-items: center;
 }
@@ -106,7 +119,7 @@ ul.lsit {
 
 }
 
-#dropbtn {
+.dropbtn {
 
     margin-right: 25px;
     margin-bottom: 0%;
@@ -122,12 +135,12 @@ ul.lsit {
     display: inline-block;
 }
 
-.dropdown:hover #dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
 
 }
 
-#dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #ddd;
 }
 
@@ -137,7 +150,7 @@ ul.lsit {
     margin-bottom: 10px;
 }
 
-#dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -386,10 +399,11 @@ h3 {
     margin-top: 5px;
 
 }
-.h3PP{
+
+.h3PP {
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size:larger;
+    font-size: larger;
     color: #0a100d;
 }
 
@@ -401,14 +415,14 @@ h3 {
 }
 
 
-.divInfoFix{
+.divInfoFix {
     display: inline-flex;
     margin-bottom: 15px;
     margin-top: 5px;
 }
 
 /* My Projects */
-.cardPrjt{
+.cardPrjt {
     width: 358px;
     border-top: 15px;
     height: auto;
@@ -420,17 +434,18 @@ h3 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.divProjet{
+
+.divProjet {
     padding: 40px;
 }
 
-#allCards{
+#allCards {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
     align-items: center;
 }
 
@@ -489,21 +504,21 @@ h3 {
     width: 250px;
 }
 
-.imgProjet{
+.imgProjet {
     width: 100%;
     margin-bottom: 10px;
 }
 
 /* Leave a Comment */
-#secCntctMe{
+#secCntctMe {
     place-items: center;
-    background-image: url(img/fond.png) ;
+    background-image: url(img/fond.png);
     color: rgba(0, 0, 0, 1);
     padding: 20px;
     padding-top: 20px
 }
 
-#h2Cntc{
+#h2Cntc {
     margin-top: 0;
 }
 
@@ -533,27 +548,28 @@ h3 {
     margin-top: 20px;
     text-align: center;
     margin-bottom: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
-.dCttAll{
+.dCttAll {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-.lblComment{
-text-align: left;
+
+.lblComment {
+    text-align: left;
 }
 
-.divComment{
+.divComment {
     display: block;
     text-align: center;
     justify-content: center;
     margin-top: 10px;
 }
 
-input{
+input {
     padding: 5px;
     border-radius: 5px;
     border-width: 1px;
@@ -571,6 +587,7 @@ input{
     width: 100%;
     height: 50px;
 }
+
 /* Go up */
 #arrow {
     float: right;
@@ -584,8 +601,33 @@ input{
     bottom: 20px;
     right: 20px;
     opacity: 50%;
+    margin-bottom: 65px;
 }
 
 #arrow:hover {
     opacity: 100%;
+}
+
+/* footer */
+footer {
+    background-color: #0a100d;
+    height: 70px;
+    align-content: center;
+}
+
+.pFooter{
+    display: flex;
+    text-align: end;
+    justify-content: right;
+    color: #d6d5c9;
+    width: 100px;
+    margin-right: 20px;
+    opacity: 70%;
+}
+
+.navFooter{
+    margin-left: auto;
+    width: 75%;
+    align-content: space-evenly;
+    margin-right: 105px;
 }
