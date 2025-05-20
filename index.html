@@ -44,19 +44,20 @@
                     </li>
                 </ul>
             </nav>
-            <section class="dropdown">
-                <button class="dropbtn">
-                    <img src="img/franceFlag.png" alt="French" class="imgChangeLang">
+            <!-- Mudar de lingua -->
+            <div class="dropdown-lang">
+                <button class="dropbtn-lang" aria-haspopup="listbox" aria-expanded="false">
+                    <img src="img/franceFlag.png" alt="Português" class="flag-icon" />
                 </button>
-                <ul class="dropdown-content">
-                    <li class="liLang">
-                        <img src="img/portugalFlag.png" alt="Portuguese" class="imgChangeLang">
+                <ul class="dropdown-content-lang" tabindex="-1" role="listbox">
+                    <li class="liLang" role="option">
+                        <img src="img/portugalFlag.png" alt="Português" class="flag-icon" />
                     </li>
-                    <li class="liLang">
-                        <img src="img/ukFlag.png" alt="English" class="imgChangeLang">
+                    <li class="liLang" role="option">
+                        <img src="img/ukFlag.png" alt="English" class="flag-icon" />
                     </li>
                 </ul>
-            </section>
+            </div>
         </div>
     </header>
 
@@ -87,7 +88,8 @@
     <!-- About me -->
     <section id="secAboutMe">
         <h2 id="h2AboutMe">Apropos Moi</h2>
-        <p id="pAboutMe">Alo, je suis Tomas, ici vous pouvez voir mon portfolio en ligne, je suis <strong>développeur web full-stack</strong> en
+        <p id="pAboutMe">Alo, je suis Tomas, ici vous pouvez voir mon portfolio en ligne, je suis <strong>développeur
+                web full-stack</strong> en
             formation latoile à l'école Emlyon! </p>
     </section>
 
@@ -328,6 +330,7 @@
                     </li>
                     <li>
                         <a href="#secProject" class="aHdr">Mes Projets</a>
+                    </li>
                     <li>
                         <a href="#secCntctMe" class="aHdr">Contact Me</a>
                     </li>
@@ -337,6 +340,9 @@
             </section>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
