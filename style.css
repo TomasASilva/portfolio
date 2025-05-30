@@ -489,93 +489,92 @@ h3 {
 /* My Projects */
 .cardPrjt {
     width: 358px;
-    border-top: 15px;
-    height: auto;
-    aspect-ratio: auto;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-    display: block;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #fff 70%, #fbeee6 100%);
+    box-shadow: 0 8px 32px rgba(162, 44, 41, 0.18), 0 1.5px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: transform 0.25s cubic-bezier(.4, 2, .6, 1), box-shadow 0.25s cubic-bezier(.4, 2, .6, 1);
+    border: 2px solid #f3f3f3;
+    overflow: hidden;
+    position: relative;
 }
 
-.divProjet {
-    padding: 40px;
+.cardPrjt:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 16px 48px 0 rgba(162, 44, 41, 0.22), 0 4px 24px rgba(0,0,0,0.13);
+    background: linear-gradient(135deg, #fff 60%, #ffe3db 100%);
+}
+.imgProjet {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 12px rgba(162, 44, 41, 0.08);
+    transition: filter 0.25s;
 }
 
-#allCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-    align-items: center;
-    gap: 32px;
+.cardPrjt:hover .imgProjet {
+    filter: brightness(1.08) saturate(1.2);
 }
 
 .nomSite {
     text-align: left;
     font-weight: bold;
-    font-size: large;
+    font-size: 1.3rem;
     color: #a22c29;
-    margin-bottom: 20px;
+    margin: 18px 0 10px 0;
+    width: 90%;
 }
 
 .pProjet {
     text-align: start;
-    margin: 0%;
-    margin-bottom: 20px;
+    margin: 0 0 18px 0;
+    width: 90%;
+    color: #444;
+    font-size: 1.05rem;
 }
 
 .btnProjet {
-    background: #a22c29;
-    border-style: solid;
-    border-color: #a22c29;
+    background: linear-gradient(90deg, #a22c29 60%, #902923 100%);
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
-    display: inline-block;
     font-weight: 700;
     border-radius: 25px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px 0 rgba(162, 44, 41, 0.13);
     cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 50px;
-    width: 250px;
+    padding: 10px 32px;
+    height: 48px;
+    width: 80%;
     text-align: center;
     align-content: center;
+    font-size: 1rem;
+    margin-bottom: 18px;
+    margin-top: auto;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s;
+    display: block;
+    border: 2px solid transparent; 
 }
 
 .btnProjet:hover {
-    background: white;
-    border-style: solid;
-    border-color: #a22c29;
+    background: #fff;
     color: #a22c29;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
-    font-weight: 700;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
-    cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 50px;
-    width: 250px;
+    border: 2px solid #a22c29;
+    box-shadow: 0 8px 32px 0 rgba(162, 44, 41, 0.18);
 }
 
-.imgProjet {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 20px 20px 0px 0px;
+#allCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Leave a Comment */

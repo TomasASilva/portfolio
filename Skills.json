@@ -1,0 +1,40 @@
+{
+    "skills": [
+        {
+            "logo": "img/logos/html.svg",
+            "title": "HTML"
+        },
+        {
+            "logo": "img/logos/css.svg",
+            "title": "CSS"
+        },
+        {
+            "logo": "img/logos/js.svg",
+            "title": "JavaScript"
+        },
+        {
+            "logo": "img/logos/csharp.svg",
+            "title": "C#"
+        },
+        {
+            "logo": "img/logos/cLogoPreto.svg",
+            "title": "C++"
+        },
+        {
+            "logo": "img/logos/notion.svg",
+            "title": "NOTION"
+        },
+        {
+            "logo": "img/logos/github.svg",
+            "title": "GITHUB"
+        },
+        {
+            "logo": "img/logos/slack-logo-black.svg",
+            "title": "SLACK"
+        },
+        {
+            "logo": "img/logos/figma.svg",
+            "title": "FIGMA"
+        }
+    ]
+}
