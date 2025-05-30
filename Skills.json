@@ -9,7 +9,7 @@
             "title": "CSS"
         },
         {
-            "logo": "img/logos/js.svg",
+            "logo": "img/logos/js.png",
             "title": "JavaScript"
         },
         {
@@ -33,7 +33,7 @@
             "title": "SLACK"
         },
         {
-            "logo": "img/logos/figma.svg",
+            "logo": "img/logos/figma.png",
             "title": "FIGMA"
         }
     ]

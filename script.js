@@ -2,10 +2,9 @@ fetch('MyProjects.json')
   .then(response => response.json())
   .then(data => {
     const projetos = data.projetos;
-    const container = document.getElementById('allCards'); // Usa o id do teu CSS
+    const container = document.getElementById('allCards');
 
     projetos.forEach((projeto, index) => {
-      // Criação manual dos elementos com as classes do teu CSS
       const card = document.createElement('div');
       card.className = 'cardPrjt';
 
@@ -28,7 +27,7 @@ fetch('MyProjects.json')
       const link = document.createElement('a');
       link.className = 'btnProjet';
       link.href = projeto.link;
-      link.textContent = 'Ver Projeto';
+      link.textContent = 'Regarde Ici';
       link.target = '_blank';
       card.appendChild(link);
 
