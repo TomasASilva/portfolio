@@ -344,6 +344,10 @@ span {
 
 }
 
+#h2AboutMe{
+    margin-top: 40px;
+}
+
 #pAboutMe {
     margin-left: auto;
     margin-right: auto;
@@ -445,6 +449,7 @@ h3 {
 
 .pInfo {
     margin-left: 30px;
+    margin-bottom: 0;
 }
 
 #cardPPro {
@@ -500,20 +505,25 @@ h3 {
     margin-bottom: 20px;
 }
 
+#secProject{
+    height: 500px;
+}
+
 .divProjet {
     padding: 40px;
 }
 
 #allCards {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
     align-items: center;
     gap: 32px;
+
 }
 
 .nomSite {
@@ -832,3 +842,4 @@ footer {
         transform: translateX(0);
     }
 }
+
