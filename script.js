@@ -38,7 +38,7 @@ fetch('MyProjects.json')
     console.error('Erro ao carregar os projetos:', error);
   });
 
- fetch('Skills.json')
+fetch('Skills.json')
   .then(response => response.json())
   .then(data => {
     const skills = data.skills;
@@ -72,3 +72,55 @@ fetch('MyProjects.json')
   .catch(error => {
     console.error('Erro ao carregar as skills:', error);
   });
+
+function typeWriterHTML(element, text, speed = 60, callback) {
+  element.innerHTML = "";
+  let i = 0;
+  let isTag = false;
+  let buffer = "";
+
+  function typing() {
+    if (i < text.length) {
+      if (text[i] === "<") {
+        isTag = true;
+        buffer += text[i];
+      } else if (text[i] === ">") {
+        buffer += text[i];
+        element.innerHTML += `<span class="typewriter-red">${buffer}</span>`;
+        buffer = "";
+        isTag = false;
+      } else if (isTag) {
+        buffer += text[i];
+      } else {
+        element.innerHTML += text[i];
+      }
+      i++;
+      setTimeout(typing, speed);
+    } else if (callback) {
+      callback();
+    }
+  }
+  typing();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const title = document.getElementById('typeTitle');
+  const subtitle = document.getElementById('h2Intro');
+  if (title && subtitle) {
+    const titleText = title.textContent;
+    const subtitleText = subtitle.textContent;
+    typeWriterHTML(title, titleText, 60, () => {
+      setTimeout(() => {
+        subtitle.innerHTML = "";
+        subtitle.style.visibility = "visible";
+        typeWriterHTML(subtitle, subtitleText, 60);
+      }, 400);
+    });
+  } else if (title) {
+    typeWriterHTML(title, title.textContent, 60);
+  } else if (subtitle) {
+    subtitle.innerHTML = "";
+    subtitle.style.visibility = "visible";
+    typeWriterHTML(subtitle, subtitle.textContent, 60);
+  }
+});
